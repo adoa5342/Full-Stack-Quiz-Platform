@@ -1,0 +1,237 @@
+/* =========================
+   Leaderboard
+========================= */
+
+.leaderboard-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.leaderboard-card {
+  width: min(900px, 100%);
+  background: white;
+  border-radius: 16px;
+  padding: 34px;
+  box-shadow: 0 18px 38px rgba(15, 23, 42, 0.12);
+}
+
+.leaderboard-card h1 {
+  text-align: center;
+  margin: 0;
+  color: #1f2937;
+  font-size: 34px;
+}
+
+.leaderboard-subtitle {
+  text-align: center;
+  color: #64748b;
+  margin: 10px 0 28px;
+}
+
+.leaderboard-message {
+  text-align: center;
+  color: #475569;
+  font-weight: 700;
+}
+
+.leaderboard-error {
+  background: #fee2e2;
+  color: #991b1b;
+  border-radius: 12px;
+  padding: 14px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.leaderboard-empty {
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 14px;
+  padding: 30px;
+  text-align: center;
+}
+
+.leaderboard-empty h3 {
+  margin: 0 0 8px;
+  color: #1f2937;
+}
+
+.leaderboard-empty p {
+  margin: 0;
+  color: #64748b;
+}
+
+.leaderboard-table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leaderboard-table thead {
+  background: #1f2937;
+  color: white;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.rank-badge {
+  display: inline-block;
+  background: #e0f2fe;
+  color: #0369a1;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-weight: 900;
+}
+
+.rank-badge.rank-one {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.rank-badge.rank-two {
+  background: #e5e7eb;
+  color: #4b5563;
+}
+
+.rank-badge.rank-three {
+  background: #fed7aa;
+  color: #c2410c;
+}
+
+.leaderboard-username {
+  color: #111827;
+  font-weight: 700;
+}
+
+.leaderboard-username.rank-one {
+  color: #d4af37;
+  font-weight: 900;
+  text-shadow: 0 0 8px rgba(212, 175, 55, 0.45);
+}
+
+.leaderboard-username.rank-two {
+  color: #9ca3af;
+  font-weight: 900;
+  text-shadow: 0 0 8px rgba(156, 163, 175, 0.45);
+}
+
+.leaderboard-username.rank-three {
+  color: #cd7f32;
+  font-weight: 900;
+  text-shadow: 0 0 8px rgba(205, 127, 50, 0.45);
+}
+
+.leaderboard-score {
+  color: #111827;
+  font-weight: 900;
+}
+
+.leaderboard-total {
+  color: #374151;
+  font-weight: 700;
+}
+
+/* =========================
+   Dark mode
+========================= */
+
+.app.dark-theme .leaderboard-card {
+  background: linear-gradient(145deg, #1e293b, #111827);
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.32);
+  color: #f9fafb;
+}
+
+.app.dark-theme .leaderboard-card h1 {
+  color: #f9fafb;
+}
+
+.app.dark-theme .leaderboard-subtitle {
+  color: #cbd5e1;
+}
+
+.app.dark-theme .leaderboard-table {
+  background: transparent;
+}
+
+.app.dark-theme .leaderboard-table thead {
+  background: #1f2937;
+}
+
+.app.dark-theme .leaderboard-table th {
+  color: #f9fafb;
+  border-color: rgba(148, 163, 184, 0.22);
+}
+
+.app.dark-theme .leaderboard-table td {
+  background: transparent;
+  border-color: rgba(148, 163, 184, 0.22);
+}
+
+.app.dark-theme .leaderboard-table tbody tr:hover {
+  background: rgba(148, 163, 184, 0.08);
+}
+
+.app.dark-theme .rank-badge {
+  background: #e0f2fe;
+  color: #0369a1;
+  text-shadow: none;
+  opacity: 1;
+}
+
+.app.dark-theme .rank-badge.rank-one {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.app.dark-theme .rank-badge.rank-two {
+  background: #e5e7eb;
+  color: #4b5563;
+}
+
+.app.dark-theme .rank-badge.rank-three {
+  background: #fed7aa;
+  color: #c2410c;
+}
+
+.app.dark-theme .leaderboard-username {
+  color: #f9fafb;
+  opacity: 1;
+}
+
+.app.dark-theme .leaderboard-username.rank-one {
+  color: #facc15;
+  text-shadow: 0 0 8px rgba(250, 204, 21, 0.45);
+}
+
+.app.dark-theme .leaderboard-username.rank-two {
+  color: #e5e7eb;
+  text-shadow: 0 0 8px rgba(229, 231, 235, 0.35);
+}
+
+.app.dark-theme .leaderboard-username.rank-three {
+  color: #fb923c;
+  text-shadow: 0 0 8px rgba(251, 146, 60, 0.45);
+}
+
+.app.dark-theme .leaderboard-score {
+  color: #34d399;
+  font-weight: 900;
+}
+
+.app.dark-theme .leaderboard-total {
+  color: #e5e7eb;
+  font-weight: 800;
+}

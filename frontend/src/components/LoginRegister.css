@@ -1,0 +1,45 @@
+.acc-box {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   width: 400px auto;
+   justify-content: center;
+}
+
+#page-name {
+   height: 30px;
+   color: #2B2D42;
+}
+
+.field {
+   width: 300px auto;
+   height: 25px;
+   padding: 10px;
+   padding-left: 25px;
+   overflow: hidden;
+   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+   box-sizing: content-box;
+   border: 1px solid #ccc;
+   border-radius: 25px;
+   background-color: whitesmoke;
+
+   font-size: medium;
+}
+
+#submit {
+   align-self: center;
+   justify-self: center;
+   width: 150px;
+   height: 30px;
+   padding: 5px;
+   overflow: hidden;
+   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+   box-sizing: content-box;
+   border-radius: 25px;
+   border-style: hidden;
+   background-color: #0DAB76;
+
+   font-size: 16px;
+   font-weight: bold;
+   color: whitesmoke;
+}

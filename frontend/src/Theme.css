@@ -1,0 +1,477 @@
+/* =========================
+   THEME BASE
+========================= */
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body.light-theme {
+  background: #98a4b4;
+}
+
+body.dark-theme {
+  background: #111827;
+}
+
+.app {
+  min-height: 100vh;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.app.light-theme {
+  background: #98a4b4;
+  color: #111827;
+}
+
+.app.dark-theme {
+  background: #111827;
+  color: #f9fafb;
+}
+
+/* =========================
+   THEME TOGGLE
+========================= */
+
+.theme-toggle {
+  background: #f8fafc;
+  color: #24263d;
+  border: none;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+  transform: translateY(-2px);
+  background: #e5e7eb;
+}
+
+.app.dark-theme .theme-toggle {
+  background: #374151;
+  color: #f9fafb;
+}
+
+.app.dark-theme .theme-toggle:hover {
+  background: #4b5563;
+}
+
+/* =========================
+   NAVBAR / MAIN LAYOUT
+========================= */
+
+.app.dark-theme .navbar {
+  background: #020617;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.app.dark-theme .main-content {
+  background: linear-gradient(145deg, #1e293b, #111827);
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.32);
+  color: #f9fafb;
+}
+
+/* =========================
+   HOME PAGE
+========================= */
+
+.app.dark-theme .home-section h1,
+.app.dark-theme .home-section h2,
+.app.dark-theme .home-section h3 {
+  color: #f9fafb;
+}
+
+.app.dark-theme .home-section p {
+  color: #cbd5e1;
+}
+
+/* =========================
+   AUTH PAGE
+========================= */
+
+.app.dark-theme .auth-page {
+  background: transparent;
+}
+
+.app.dark-theme .auth-hero h1,
+.app.dark-theme .auth-panel h2 {
+  color: #f9fafb;
+}
+
+.app.dark-theme .auth-hero p,
+.app.dark-theme .auth-panel p {
+  color: #cbd5e1;
+}
+
+.app.dark-theme .auth-panel {
+  background: rgba(30, 41, 59, 0.9);
+  border-color: rgba(148, 163, 184, 0.25);
+}
+
+.app.dark-theme .auth-feature-row span {
+  background: #1f2937;
+  color: #f9fafb;
+  border-color: #374151;
+}
+
+.app.dark-theme .password-field .show-password-button {
+  background: #334155;
+  color: #f9fafb;
+}
+
+.app.dark-theme .password-field .show-password-button:hover {
+  background: #475569;
+}
+
+/* =========================
+   QUIZ PAGE
+========================= */
+
+.app.dark-theme .quiz-card,
+.app.dark-theme .quiz-side-panel {
+  background: linear-gradient(145deg, #1f2937, #111827);
+  border-color: rgba(148, 163, 184, 0.28);
+  color: #f9fafb;
+}
+
+.app.dark-theme .quiz-card h1,
+.app.dark-theme .quiz-card h2,
+.app.dark-theme .quiz-card h3,
+.app.dark-theme .quiz-side-panel h3,
+.app.dark-theme .question-block h3 {
+  color: #f9fafb;
+}
+
+.app.dark-theme .quiz-side-panel p,
+.app.dark-theme .quiz-subtitle,
+.app.dark-theme .tip-item p {
+  color: #cbd5e1;
+}
+
+.app.dark-theme .option-card,
+.app.dark-theme .tip-item,
+.app.dark-theme .side-stat {
+  background: #0f172a;
+  color: #f9fafb;
+  border-color: #334155;
+}
+
+.app.dark-theme .option-card:hover {
+  background: #064e3b;
+  border-color: #10b981;
+}
+
+.app.dark-theme .selected-option {
+  background: linear-gradient(145deg, #065f46, #047857);
+  border-color: #34d399;
+}
+
+.app.dark-theme .option-letter {
+  background: #334155;
+  color: #f9fafb;
+}
+
+.app.dark-theme .question-badge {
+  background: #1e3a8a;
+  color: #bfdbfe;
+  border: 1px solid #3b82f6;
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.22);
+}
+
+.app.dark-theme .side-stat span {
+  color: #cbd5e1;
+}
+
+.app.dark-theme .side-stat strong {
+  color: #f9fafb;
+}
+
+.app.dark-theme .result-card {
+  background: linear-gradient(145deg, #064e3b, #065f46);
+  border-color: #10b981;
+}
+
+.app.dark-theme .result-card h2,
+.app.dark-theme .score-text,
+.app.dark-theme .score-percent {
+  color: #f9fafb;
+}
+
+/* =========================
+   HISTORY / REVIEW PAGES
+========================= */
+
+.app.dark-theme .history-container,
+.app.dark-theme .review-container {
+  background: linear-gradient(145deg, #1f2937, #111827);
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+
+.app.dark-theme .history-container h1,
+.app.dark-theme .review-container h1 {
+  color: #f9fafb;
+}
+
+.app.dark-theme .history-card,
+.app.dark-theme .review-card,
+.app.dark-theme .review-summary-card,
+.app.dark-theme .attempt-card,
+.app.dark-theme .question-review-card,
+.app.dark-theme .review-question-card {
+  background: #0f172a;
+  color: #f9fafb;
+  border: 1px solid #334155;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+}
+
+.app.dark-theme .history-card h1,
+.app.dark-theme .history-card h2,
+.app.dark-theme .history-card h3,
+.app.dark-theme .review-card h1,
+.app.dark-theme .review-card h2,
+.app.dark-theme .review-card h3,
+.app.dark-theme .review-summary-card h3,
+.app.dark-theme .attempt-card h3,
+.app.dark-theme .question-review-card h3,
+.app.dark-theme .review-question-card h3 {
+  color: #f9fafb;
+}
+
+.app.dark-theme .history-card p,
+.app.dark-theme .review-card p,
+.app.dark-theme .review-summary-card p,
+.app.dark-theme .attempt-card p,
+.app.dark-theme .question-review-card p,
+.app.dark-theme .review-question-card p {
+  color: #cbd5e1;
+}
+
+.app.dark-theme .review-correct,
+.app.dark-theme .correct,
+.app.dark-theme .correct-answer {
+  color: #34d399;
+  font-weight: 900;
+}
+
+.app.dark-theme .review-incorrect,
+.app.dark-theme .incorrect,
+.app.dark-theme .wrong-answer {
+  color: #f87171;
+  font-weight: 900;
+}
+
+.app.dark-theme .review-link,
+.app.dark-theme .main-content a {
+  color: #34d399;
+}
+
+.app.dark-theme .review-link:hover,
+.app.dark-theme .main-content a:hover {
+  color: #6ee7b7;
+}
+
+/* =========================
+   LEADERBOARD PAGE
+========================= */
+
+.app.dark-theme .leaderboard-page {
+  background: transparent;
+}
+
+.app.dark-theme .leaderboard-card,
+.app.dark-theme .leaderboard-shell {
+  background: linear-gradient(145deg, #1e293b, #111827);
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.32);
+  color: #f9fafb;
+}
+
+.app.dark-theme .leaderboard-card h1,
+.app.dark-theme .leaderboard-shell h1,
+.app.dark-theme .leaderboard-hero h1,
+.app.dark-theme .rankings-header h2 {
+  color: #f9fafb;
+}
+
+.app.dark-theme .leaderboard-subtitle,
+.app.dark-theme .leaderboard-card p,
+.app.dark-theme .leaderboard-shell p,
+.app.dark-theme .leaderboard-hero p {
+  color: #cbd5e1;
+}
+
+.app.dark-theme .leaderboard-stage {
+  background:
+    radial-gradient(circle at 50% 10%, rgba(16, 185, 129, 0.22), transparent 28%),
+    radial-gradient(circle at 20% 70%, rgba(99, 102, 241, 0.18), transparent 30%),
+    linear-gradient(145deg, #020617, #111827);
+}
+
+.app.dark-theme .leaderboard-table-wrapper,
+.app.dark-theme .leaderboard-table {
+  background: transparent;
+  color: #f9fafb;
+  border-color: rgba(148, 163, 184, 0.22);
+}
+
+.app.dark-theme .leaderboard-table thead,
+.app.dark-theme .leaderboard-table th {
+  background: #1f2937;
+  color: #f9fafb;
+  border-color: rgba(148, 163, 184, 0.22);
+}
+
+.app.dark-theme .leaderboard-table tbody tr,
+.app.dark-theme .leaderboard-table td {
+  background: transparent;
+  border-color: rgba(148, 163, 184, 0.22);
+}
+
+.app.dark-theme .leaderboard-table tbody tr:hover {
+  background: rgba(148, 163, 184, 0.08);
+}
+
+.app.dark-theme .rank-badge {
+  background: #e0f2fe;
+  color: #0369a1;
+  text-shadow: none;
+  opacity: 1;
+}
+
+.app.dark-theme .rank-badge.rank-one {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.app.dark-theme .rank-badge.rank-two {
+  background: #e5e7eb;
+  color: #4b5563;
+}
+
+.app.dark-theme .rank-badge.rank-three {
+  background: #fed7aa;
+  color: #c2410c;
+}
+
+.app.dark-theme .leaderboard-username {
+  color: #f9fafb;
+  opacity: 1;
+}
+
+.app.dark-theme .leaderboard-username.rank-one {
+  color: #facc15;
+  text-shadow: 0 0 8px rgba(250, 204, 21, 0.45);
+}
+
+.app.dark-theme .leaderboard-username.rank-two {
+  color: #e5e7eb;
+  text-shadow: 0 0 8px rgba(229, 231, 235, 0.35);
+}
+
+.app.dark-theme .leaderboard-username.rank-three {
+  color: #fb923c;
+  text-shadow: 0 0 8px rgba(251, 146, 60, 0.45);
+}
+
+.app.dark-theme .leaderboard-score,
+.app.dark-theme .leaderboard-table td:nth-child(3) {
+  color: #34d399;
+  font-weight: 900;
+}
+
+.app.dark-theme .leaderboard-total,
+.app.dark-theme .leaderboard-table td:nth-child(4) {
+  color: #e5e7eb;
+  font-weight: 800;
+}
+
+.app.dark-theme .leaderboard-row {
+  background: #0f172a;
+  border-color: #334155;
+  color: #f9fafb;
+}
+
+.app.dark-theme .leaderboard-row:hover {
+  background: #1e293b;
+}
+
+.app.dark-theme .player-cell strong,
+.app.dark-theme .score-cell strong,
+.app.dark-theme .questions-cell strong,
+.app.dark-theme .rank-cell {
+  color: #f9fafb;
+}
+
+.app.dark-theme .player-cell span,
+.app.dark-theme .score-cell span,
+.app.dark-theme .questions-cell span {
+  color: #cbd5e1;
+}
+
+/* =========================
+   ADMIN PAGE
+========================= */
+
+.app.dark-theme .admin-page,
+.app.dark-theme .admin-card,
+.app.dark-theme .admin-panel,
+.app.dark-theme .admin-container,
+.app.dark-theme .admin-wrapper {
+  background: #1f2937;
+  color: #f9fafb;
+  border-color: #334155;
+}
+
+.app.dark-theme .admin-page h1,
+.app.dark-theme .admin-page h2,
+.app.dark-theme .admin-page h3,
+.app.dark-theme .admin-card h1,
+.app.dark-theme .admin-card h2,
+.app.dark-theme .admin-card h3,
+.app.dark-theme .admin-panel h1,
+.app.dark-theme .admin-panel h2,
+.app.dark-theme .admin-panel h3 {
+  color: #f9fafb;
+}
+
+.app.dark-theme .admin-page p,
+.app.dark-theme .admin-card p,
+.app.dark-theme .admin-panel p {
+  color: #cbd5e1;
+}
+
+/* =========================
+   GLOBAL FORM FALLBACKS
+========================= */
+
+.app.dark-theme input,
+.app.dark-theme textarea,
+.app.dark-theme select {
+  background: #0f172a;
+  color: #f9fafb;
+  border-color: #334155;
+}
+
+.app.dark-theme input::placeholder,
+.app.dark-theme textarea::placeholder {
+  color: #94a3b8;
+}
+
+.app.dark-theme .submit-button:disabled {
+  background: linear-gradient(135deg, #475569, #64748b);
+  color: #e5e7eb;
+  border: 1px solid #64748b;
+  opacity: 1;
+  cursor: not-allowed;
+}
+
+.app.dark-theme .submit-button:disabled:hover {
+  transform: none;
+}
