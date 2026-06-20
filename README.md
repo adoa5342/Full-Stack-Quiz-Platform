@@ -1,6 +1,6 @@
 # Online Quiz Application
 
-## Assignment 2 Group Project
+## Summary
 
 This project is a full-stack single-player online quiz application built with the **MERN stack**. Users can register, log in, complete randomised quiz attempts, receive a score, review completed attempts in detail, view their quiz history, and compare results on a leaderboard. Admin users can manage quiz questions through a protected admin interface.
 
@@ -11,8 +11,6 @@ The application implements the required core quiz mechanics plus our approved gr
 ## Approved Game Mechanic Variation
 
 ### Review Mode After Completion
-
-Our selected and implemented variation is **Review mode after completion**.
 
 After a user submits a quiz, the application displays the final score and provides a **Review attempt** option. Review mode allows the user to inspect the completed attempt question-by-question, including:
 
